@@ -1,0 +1,146 @@
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .todo-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Estilo do input e botão de adicionar */
+  .todo-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    margin-right: 10px;
+  }
+  
+  .todo-input button {
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .todo-input button:hover {
+    background-color: #e67e00;
+  }
+  
+  /* Estilo dos filtros */
+  .todo-filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    padding: 10px 15px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-btn.active,
+  .filter-btn:hover {
+    background-color: #ff8c00;
+    color: #fff;
+  }
+  
+  /* Estilo da lista de tarefas */
+  ul#todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li.todo-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  li.todo-item.completed {
+    text-decoration: line-through;
+    color: #999;
+    background-color: #e0e0e0;
+  }
+  
+  /* Estilo dos botões de ação nas tarefas */
+  .todo-actions button {
+    margin-left: 10px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .todo-actions button:hover {
+    background-color: #e67e00;
+  }
+  
+  .todo-actions button.edit-btn {
+    background-color: #007bff;
+  }
+  
+  .todo-actions button.edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 500px) {
+    .todo-input input {
+      width: 60%;
+    }
+  
+    .todo-input button {
+      padding: 10px 15px;
+    }
+  
+    .filter-btn {
+      padding: 10px 10px;
+      font-size: 14px;
+    }
+  
+    li.todo-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
